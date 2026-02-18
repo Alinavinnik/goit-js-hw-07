@@ -33,7 +33,7 @@ function imgsTemplate(images) {
 }
 const markup = imgsTemplate(images);
 const imgGallary = document.querySelector('.gallery');
-imgGallary.innerHTML = markup;
+imgGallary.insertAdjacentHTML('beforeend', markup);
 
 const imgElems = document.querySelectorAll('img');
 
